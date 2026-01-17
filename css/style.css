@@ -691,7 +691,8 @@ input, textarea, select {
     display: flex;
     align-items: center;
     padding-top: var(--header-height-mobile);
-    background: linear-gradient(135deg, var(--nova-primary) 0%, var(--nova-primary-dark) 100%);
+    background: linear-gradient(135deg, rgba(27, 58, 95, 0.92) 0%, rgba(17, 42, 70, 0.95) 100%),
+                url('../images/hero/hero-bg.jpg') center/cover no-repeat;
     overflow: hidden;
 }
 
@@ -1523,7 +1524,8 @@ input, textarea, select {
    ============================================= */
 .page-hero {
     padding: calc(var(--header-height-mobile) + var(--spacing-3xl)) 0 var(--spacing-3xl);
-    background: linear-gradient(135deg, var(--nova-primary) 0%, var(--nova-primary-dark) 100%);
+    background: linear-gradient(135deg, rgba(27, 58, 95, 0.92) 0%, rgba(17, 42, 70, 0.95) 100%),
+                url('../images/hero/hero-bg.jpg') center/cover no-repeat;
     text-align: center;
 }
 
