@@ -1,0 +1,11 @@
+# Nova Rørservice AS - robots.txt
+# https://nova-rorservice.no
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://nova-rorservice.no/sitemap.xml
+
+# Crawl-delay (optional, for rate limiting)
+Crawl-delay: 1

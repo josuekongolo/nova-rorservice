@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>VVS-Tjenester Oslo | Rørlegger, Bad, Akutt | Nova Rørservice</title>
+    <meta name="description" content="Komplett VVS-service i Oslo øst. Rørleggerservice, baderom renovering, rørleggervakt. Se våre tjenester og priser.">
+    <meta name="keywords" content="rørlegger tjenester oslo, VVS oslo øst, baderom renovering, rørleggervakt, kjøkken VVS">
+    <meta name="author" content="Nova Rørservice AS">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="VVS-Tjenester Oslo | Nova Rørservice AS">
+    <meta property="og:description" content="Komplett VVS-service i Oslo øst. Rørleggerservice, baderom renovering, akutt hjelp.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nova-rorservice.no/tjenester">
+    <meta property="og:locale" content="nb_NO">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%231B3A5F' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-family='Arial' font-size='40' font-weight='bold' fill='white' text-anchor='middle'%3ENR%3C/text%3E%3Crect fill='%23E85D04' y='85' width='100' height='15' rx='0'/%3E%3C/svg%3E">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo">
+                <div class="header__logo-icon">NR</div>
+                <div class="header__logo-text">
+                    <span class="header__logo-name">Nova Rørservice</span>
+                    <span class="header__logo-tagline">Rørlegger i Oslo Øst</span>
+                </div>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Hjem</a></li>
+                    <li><a href="tjenester.html" class="nav__link nav__link--active">Tjenester</a></li>
+                    <li><a href="om-oss.html" class="nav__link">Om Oss</a></li>
+                    <li><a href="priser.html" class="nav__link">Priser</a></li>
+                    <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="tel:+4740012345" class="header__phone">
+                    <svg class="header__phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span>400 12 345</span>
+                </a>
+                <a href="kontakt.html" class="btn btn--primary header__cta">Få Pristilbud</a>
+
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Åpne meny">
+                    <span class="hamburger">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul class="mobile-nav__list">
+                <li><a href="index.html" class="mobile-nav__link">Hjem</a></li>
+                <li><a href="tjenester.html" class="mobile-nav__link mobile-nav__link--active">Tjenester</a></li>
+                <li><a href="om-oss.html" class="mobile-nav__link">Om Oss</a></li>
+                <li><a href="priser.html" class="mobile-nav__link">Priser</a></li>
+                <li><a href="kontakt.html" class="mobile-nav__link">Kontakt</a></li>
+            </ul>
+            <a href="tel:+4740012345" class="mobile-nav__phone">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                400 12 345
+            </a>
+            <a href="kontakt.html" class="btn btn--primary btn--lg mobile-nav__cta">Få Pristilbud</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero__title">Våre Tjenester</h1>
+                <p class="page-hero__subtitle">Komplett VVS-service for privatpersoner og bedrifter i Oslo Øst</p>
+                <nav class="page-hero__breadcrumb">
+                    <a href="index.html">Hjem</a>
+                    <span class="page-hero__breadcrumb-separator">/</span>
+                    <span class="page-hero__breadcrumb-current">Tjenester</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Services Introduction -->
+        <section class="service-detail section">
+            <div class="container">
+                <div class="service-detail__intro">
+                    <p class="service-detail__intro-text">
+                        Hos Nova Rørservice tilbyr vi et bredt spekter av VVS-tjenester. Fra enkle reparasjoner til komplette baderomrenoveringer - vi har kompetansen og erfaringen som trengs for å levere kvalitetsarbeid hver gang.
+                    </p>
+                </div>
+
+                <div class="service-detail__grid">
+                    <!-- Service 1: Rørleggerservice -->
+                    <div class="service-block" id="rorleggerservice">
+                        <div class="service-block__header">
+                            <div class="service-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                                </svg>
+                            </div>
+                            <div class="service-block__title-wrapper">
+                                <h2 class="service-block__title">Rørleggerservice</h2>
+                                <p class="service-block__tagline">Reparasjoner og vedlikehold</p>
+                            </div>
+                        </div>
+
+                        <p class="service-block__description">
+                            Fra dryppende kraner til større reparasjoner - vi fikser det meste innen rørleggerfaget raskt og effektivt. Vårt mål er å løse problemet ditt på første besøk.
+                        </p>
+
+                        <ul class="service-block__list">
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Lekkende kraner og rør</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Tette avløp - staking og spyling</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Rennende toaletter</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Bytte av servanter og toaletter</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Reparasjon av varmtvannsberedere</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Frostskader og rørbrudd</span>
+                            </li>
+                        </ul>
+
+                        <div class="service-block__highlight">
+                            <div class="service-block__highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                </svg>
+                            </div>
+                            <div class="service-block__highlight-text">
+                                <p class="service-block__highlight-title">Rask respons og rettferdig pris</p>
+                                <p class="service-block__highlight-desc">Ring oss for akutt hjelp eller planlagte reparasjoner. Vi kommer når det passer deg.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Baderom -->
+                    <div class="service-block" id="baderom">
+                        <div class="service-block__header">
+                            <div class="service-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                                </svg>
+                            </div>
+                            <div class="service-block__title-wrapper">
+                                <h2 class="service-block__title">Baderom</h2>
+                                <p class="service-block__tagline">Renovering og oppussing</p>
+                            </div>
+                        </div>
+
+                        <p class="service-block__description">
+                            Drømmer du om et nytt bad? Vi tar hele jobben - fra riving til ferdig resultat. Alt utføres etter gjeldende forskrifter og våtromsnormen.
+                        </p>
+
+                        <ul class="service-block__list">
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Totalrenovering av bad</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Membranarbeid og våtromssikring</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Nye sanitærinstallasjoner</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Rør og avløp</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Gulvvarme (vannbåren)</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Flytting av rør og sluk</span>
+                            </li>
+                        </ul>
+
+                        <div class="service-block__highlight">
+                            <div class="service-block__highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="service-block__highlight-text">
+                                <p class="service-block__highlight-title">Komplett løsning</p>
+                                <p class="service-block__highlight-desc">Vi samarbeider med flisleggere og elektrikere for å gi deg en komplett løsning. Alle våtromsarbeider dokumenteres.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Kjøkken -->
+                    <div class="service-block" id="kjokken">
+                        <div class="service-block__header">
+                            <div class="service-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                            </div>
+                            <div class="service-block__title-wrapper">
+                                <h2 class="service-block__title">Kjøkken</h2>
+                                <p class="service-block__tagline">Installasjon og service</p>
+                            </div>
+                        </div>
+
+                        <p class="service-block__description">
+                            Nytt kjøkken eller bare en ny kran? Vi ordner VVS-arbeidet raskt og uten rot. Profesjonell installasjon av alt kjøkkenutstyr som krever rørlegger.
+                        </p>
+
+                        <ul class="service-block__list">
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Montering av oppvaskbenk</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Bytte av blandebatteri</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Tilkobling av oppvaskmaskin</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Vannfilter og vannrensing</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Waterguard/lekkasjevarsler</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Rørarbeid under benk</span>
+                            </li>
+                        </ul>
+
+                        <div class="service-block__highlight">
+                            <div class="service-block__highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="service-block__highlight-text">
+                                <p class="service-block__highlight-title">Rask og ryddig</p>
+                                <p class="service-block__highlight-desc">Vi kommer gjerne på befaring for å gi deg et presist tilbud. Arbeidet utføres effektivt uten unødig rot.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 4: VVS-Installasjon -->
+                    <div class="service-block" id="vvs-installasjon">
+                        <div class="service-block__header">
+                            <div class="service-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="service-block__title-wrapper">
+                                <h2 class="service-block__title">VVS-Installasjon</h2>
+                                <p class="service-block__tagline">Nybygg og rehabilitering</p>
+                            </div>
+                        </div>
+
+                        <p class="service-block__description">
+                            Bygger du nytt eller utvider boligen? Vi tar ansvar for alt av VVS-arbeid i prosjektet ditt. Alt utføres etter TEK17 med full dokumentasjon.
+                        </p>
+
+                        <ul class="service-block__list">
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Komplette VVS-anlegg for nybygg</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Rørarbeid ved tilbygg og påbygg</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Utskifting av gamle rør</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Vannbåren gulvvarme</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Vannmåler installasjon</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Sentralfyring og varme</span>
+                            </li>
+                        </ul>
+
+                        <div class="service-block__highlight">
+                            <div class="service-block__highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                                </svg>
+                            </div>
+                            <div class="service-block__highlight-text">
+                                <p class="service-block__highlight-title">Forskriftsmessig utført</p>
+                                <p class="service-block__highlight-desc">Vi jobber etter TEK17 og leverer nødvendig dokumentasjon for alle installasjoner.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 5: Rørleggervakt -->
+                    <div class="service-block" id="rorleggervakt">
+                        <div class="service-block__header">
+                            <div class="service-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                </svg>
+                            </div>
+                            <div class="service-block__title-wrapper">
+                                <h2 class="service-block__title">Rørleggervakt</h2>
+                                <p class="service-block__tagline">Akutt hjelp - 24/7</p>
+                            </div>
+                        </div>
+
+                        <p class="service-block__description">
+                            Vannlekkasje midt på natten? Vi er tilgjengelige når uhellet er ute. Som lokal rørlegger i Høybråten kan vi ofte være raskere på stedet enn firmaer som kommer fra andre deler av byen.
+                        </p>
+
+                        <ul class="service-block__list">
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Vannlekkasjer og rørbrudd</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Tette avløp som må løses raskt</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Frosne eller sprukne rør</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Varmtvannsbereder som ikke virker</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Oversvømmelse fra rør</span>
+                            </li>
+                        </ul>
+
+                        <div class="service-block__highlight">
+                            <div class="service-block__highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="service-block__highlight-text">
+                                <p class="service-block__highlight-title">Ring oss for akutt hjelp: 400 12 345</p>
+                                <p class="service-block__highlight-desc">Lokal tilstedeværelse betyr raskere responstid i Groruddalen.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 6: Borettslag -->
+                    <div class="service-block" id="borettslag">
+                        <div class="service-block__header">
+                            <div class="service-block__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <div class="service-block__title-wrapper">
+                                <h2 class="service-block__title">Borettslag og Sameie</h2>
+                                <p class="service-block__tagline">Fellestiltak og samarbeidsavtaler</p>
+                            </div>
+                        </div>
+
+                        <p class="service-block__description">
+                            Vi tilbyr skreddersydde løsninger for borettslag og sameier som skal oppgradere rør og bad. Erfaring med større prosjekter og konkurransedyktige priser for kollektive tiltak.
+                        </p>
+
+                        <ul class="service-block__list">
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Tilstandsvurdering av rør</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Planlegging av fellestiltak</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Standardbad-konsepter</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Koordinert utskifting av rør</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Stikkledninger og felles avløp</span>
+                            </li>
+                            <li class="service-block__list-item">
+                                <span class="service-block__list-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </span>
+                                <span class="service-block__list-text">Dokumentasjon for styret</span>
+                            </li>
+                        </ul>
+
+                        <div class="service-block__highlight">
+                            <div class="service-block__highlight-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                            </div>
+                            <div class="service-block__highlight-text">
+                                <p class="service-block__highlight-title">Konkurransedyktige priser</p>
+                                <p class="service-block__highlight-desc">Vi har erfaring med større prosjekter og kan gi gode priser for kollektive tiltak.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Trenger du hjelp med VVS?</h2>
+                    <p class="cta__text">
+                        Kontakt oss i dag for en uforpliktende prat om ditt prosjekt. Vi gir alltid et ærlig pristilbud.
+                    </p>
+                    <div class="cta__actions">
+                        <a href="tel:+4740012345" class="btn btn--white btn--lg">
+                            <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            Ring Oss
+                        </a>
+                        <a href="priser.html" class="btn btn--outline-white btn--lg">Se Priser</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <div class="footer__logo-icon">NR</div>
+                        <span class="footer__logo-text">Nova Rørservice</span>
+                    </div>
+                    <p class="footer__description">
+                        Din lokale rørlegger i Oslo Øst. Vi tilbyr profesjonell VVS-service med fokus på kvalitet og kundetilfredshet.
+                    </p>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Tjenester</h4>
+                    <ul class="footer__links">
+                        <li><a href="tjenester.html#rorleggerservice" class="footer__link">Rørleggerservice</a></li>
+                        <li><a href="tjenester.html#baderom" class="footer__link">Baderom</a></li>
+                        <li><a href="tjenester.html#kjokken" class="footer__link">Kjøkken</a></li>
+                        <li><a href="tjenester.html#rorleggervakt" class="footer__link">Rørleggervakt</a></li>
+                        <li><a href="tjenester.html#borettslag" class="footer__link">Borettslag</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Navigasjon</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html" class="footer__link">Hjem</a></li>
+                        <li><a href="tjenester.html" class="footer__link">Tjenester</a></li>
+                        <li><a href="om-oss.html" class="footer__link">Om Oss</a></li>
+                        <li><a href="priser.html" class="footer__link">Priser</a></li>
+                        <li><a href="kontakt.html" class="footer__link">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Kontakt</h4>
+                    <div class="footer__contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <a href="tel:+4740012345" class="footer__contact-link">400 12 345</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <a href="mailto:kontakt@nova-rorservice.no" class="footer__contact-link">kontakt@nova-rorservice.no</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Høybråtenveien 25B<br>1055 Oslo</span>
+                    </div>
+
+                    <div class="footer__hours">
+                        <div class="footer__hours-row">
+                            <span>Man - Fre:</span>
+                            <span>07:00 - 16:00</span>
+                        </div>
+                        <div class="footer__hours-row">
+                            <span>Lørdag:</span>
+                            <span>09:00 - 14:00</span>
+                        </div>
+                        <div class="footer__hours-row">
+                            <span>Søndag:</span>
+                            <span>Kun akutt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__bottom-inner">
+                    <p class="footer__copyright">&copy; 2025 Nova Rørservice AS. Alle rettigheter reservert.</p>
+                    <p class="footer__org">Org.nr: 936 922 988</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Tilbake til toppen">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

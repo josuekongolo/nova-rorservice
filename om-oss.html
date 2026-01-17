@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="nb-NO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- SEO Meta Tags -->
+    <title>Om Oss | Lokal Rørlegger Groruddalen | Nova Rørservice AS</title>
+    <meta name="description" content="Nova Rørservice er din lokale rørlegger i Høybråten, Oslo. Les mer om oss og hvorfor vi er det rette valget for deg.">
+    <meta name="keywords" content="om nova rørservice, rørlegger høybråten, lokal rørlegger oslo øst, VVS groruddalen">
+    <meta name="author" content="Nova Rørservice AS">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Om Oss | Nova Rørservice AS">
+    <meta property="og:description" content="Din lokale rørlegger i Høybråten, Oslo. Les mer om hvem vi er og våre verdier.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nova-rorservice.no/om-oss">
+    <meta property="og:locale" content="nb_NO">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%231B3A5F' width='100' height='100' rx='20'/%3E%3Ctext x='50' y='65' font-family='Arial' font-size='40' font-weight='bold' fill='white' text-anchor='middle'%3ENR%3C/text%3E%3Crect fill='%23E85D04' y='85' width='100' height='15' rx='0'/%3E%3C/svg%3E">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo">
+                <div class="header__logo-icon">NR</div>
+                <div class="header__logo-text">
+                    <span class="header__logo-name">Nova Rørservice</span>
+                    <span class="header__logo-tagline">Rørlegger i Oslo Øst</span>
+                </div>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Hjem</a></li>
+                    <li><a href="tjenester.html" class="nav__link">Tjenester</a></li>
+                    <li><a href="om-oss.html" class="nav__link nav__link--active">Om Oss</a></li>
+                    <li><a href="priser.html" class="nav__link">Priser</a></li>
+                    <li><a href="kontakt.html" class="nav__link">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="tel:+4740012345" class="header__phone">
+                    <svg class="header__phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span>400 12 345</span>
+                </a>
+                <a href="kontakt.html" class="btn btn--primary header__cta">Få Pristilbud</a>
+
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Åpne meny">
+                    <span class="hamburger">
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                        <span class="hamburger__line"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul class="mobile-nav__list">
+                <li><a href="index.html" class="mobile-nav__link">Hjem</a></li>
+                <li><a href="tjenester.html" class="mobile-nav__link">Tjenester</a></li>
+                <li><a href="om-oss.html" class="mobile-nav__link mobile-nav__link--active">Om Oss</a></li>
+                <li><a href="priser.html" class="mobile-nav__link">Priser</a></li>
+                <li><a href="kontakt.html" class="mobile-nav__link">Kontakt</a></li>
+            </ul>
+            <a href="tel:+4740012345" class="mobile-nav__phone">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                400 12 345
+            </a>
+            <a href="kontakt.html" class="btn btn--primary btn--lg mobile-nav__cta">Få Pristilbud</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-hero__title">Om Nova Rørservice</h1>
+                <p class="page-hero__subtitle">Din lokale rørlegger i Oslo Øst</p>
+                <nav class="page-hero__breadcrumb">
+                    <a href="index.html">Hjem</a>
+                    <span class="page-hero__breadcrumb-separator">/</span>
+                    <span class="page-hero__breadcrumb-current">Om Oss</span>
+                </nav>
+            </div>
+        </section>
+
+        <!-- About Introduction -->
+        <section class="about-intro section">
+            <div class="container">
+                <div class="about-intro__grid">
+                    <div class="about-intro__content">
+                        <h2 class="about-intro__title">Hvem Vi Er</h2>
+                        <p class="about-intro__text">
+                            Nova Rørservice AS ble etablert i 2025 med ett mål: å være den rørleggeren du kan stole på i Oslo øst.
+                        </p>
+                        <p class="about-intro__text">
+                            Med base i Høybråten er vi en del av lokalsamfunnet i Groruddalen. Vi tror på ærlig håndverk, rettferdige priser og at en rørlegger skal være tilgjengelig når du trenger ham.
+                        </p>
+                        <p class="about-intro__text">
+                            Enten det gjelder en liten reparasjon eller et stort renoveringsprosjekt, behandler vi alle kunder med samme respekt og grundighet. Vi er her for å løse dine VVS-problemer - ikke for å selge deg tjenester du ikke trenger.
+                        </p>
+                        <a href="kontakt.html" class="btn btn--primary">Ta kontakt</a>
+                    </div>
+                    <div class="about-intro__image-wrapper">
+                        <div class="about-intro__image">
+                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&h=400&fit=crop&auto=format" alt="Profesjonell rørlegger på jobb" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__label">Våre Verdier</span>
+                    <h2 class="section-header__title">Det vi står for</h2>
+                    <p class="section-header__subtitle">Våre verdier styrer alt vi gjør - fra første telefonsamtale til ferdig jobb.</p>
+                </div>
+
+                <div class="values__grid">
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Tilgjengelighet</h3>
+                        <p class="value-card__text">Vi svarer telefonen og er tilgjengelige når du trenger oss. Ingen lang ventetid.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Ærlighet</h3>
+                        <p class="value-card__text">Du får en ærlig vurdering og en pris du kan stole på. Ingen overraskelser.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Kvalitet</h3>
+                        <p class="value-card__text">Vi gjør jobben riktig første gang. Skikkelig håndverk som varer.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="value-card__title">Lokalsamfunn</h3>
+                        <p class="value-card__text">Som lokal bedrift er vårt omdømme viktig for oss. Vi leverer fordi naboene våre fortjener det beste.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Area Section -->
+        <section class="service-area section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__label">Vårt Område</span>
+                    <h2 class="section-header__title">Vi dekker hele Oslo Øst</h2>
+                    <p class="section-header__subtitle">Basert i Høybråten med rask utrykning til hele Groruddalen og omegn.</p>
+                </div>
+
+                <div class="service-area__grid">
+                    <div class="service-area__list">
+                        <h3 class="service-area__list-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                            Primærområde (rask respons)
+                        </h3>
+                        <ul class="service-area__list-items">
+                            <li class="service-area__list-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Høybråten
+                            </li>
+                            <li class="service-area__list-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Stovner
+                            </li>
+                            <li class="service-area__list-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Vestli
+                            </li>
+                            <li class="service-area__list-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Haugenstua
+                            </li>
+                            <li class="service-area__list-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Grorud
+                            </li>
+                            <li class="service-area__list-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Romsås
+                            </li>
+                            <li class="service-area__list-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Ammerud
+                            </li>
+                            <li class="service-area__list-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Kalbakken
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="service-area__list">
+                        <h3 class="service-area__list-title">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                            Utvidet område
+                        </h3>
+                        <ul class="service-area__list-items">
+                            <li class="service-area__list-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Alna bydel (Furuset, Ellingsrud)
+                            </li>
+                            <li class="service-area__list-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Bjerke bydel
+                            </li>
+                            <li class="service-area__list-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Lørenskog og Strømmen
+                            </li>
+                            <li class="service-area__list-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Lillestrøm (Skjetten)
+                            </li>
+                            <li class="service-area__list-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                Nittedal
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: var(--spacing-2xl);">
+                    <p style="color: rgba(255,255,255,0.8); margin-bottom: var(--spacing-md);">Usikker på om vi dekker deg? Ring oss - vi strekker oss langt for å hjelpe!</p>
+                    <a href="tel:+4740012345" class="btn btn--white">Ring 400 12 345</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Info Section -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__label">Firmainformasjon</span>
+                    <h2 class="section-header__title">Offisiell informasjon</h2>
+                </div>
+
+                <div class="why-us__grid" style="max-width: 800px; margin: 0 auto;">
+                    <div class="why-us__card">
+                        <div class="why-us__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <div class="why-us__content">
+                            <h3 class="why-us__title">Etablert</h3>
+                            <p class="why-us__text">Desember 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="why-us__card">
+                        <div class="why-us__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                            </svg>
+                        </div>
+                        <div class="why-us__content">
+                            <h3 class="why-us__title">Organisasjonsnummer</h3>
+                            <p class="why-us__text">936 922 988</p>
+                        </div>
+                    </div>
+
+                    <div class="why-us__card">
+                        <div class="why-us__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div class="why-us__content">
+                            <h3 class="why-us__title">Forretningsadresse</h3>
+                            <p class="why-us__text">Høybråtenveien 25B, 1055 Oslo</p>
+                        </div>
+                    </div>
+
+                    <div class="why-us__card">
+                        <div class="why-us__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                            </svg>
+                        </div>
+                        <div class="why-us__content">
+                            <h3 class="why-us__title">Bransje</h3>
+                            <p class="why-us__text">VVS-arbeid (NACE 43.220)</p>
+                        </div>
+                    </div>
+
+                    <div class="why-us__card">
+                        <div class="why-us__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="why-us__content">
+                            <h3 class="why-us__title">Daglig leder</h3>
+                            <p class="why-us__text">Mohamed Eddamnat</p>
+                        </div>
+                    </div>
+
+                    <div class="why-us__card">
+                        <div class="why-us__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="9" y1="21" x2="9" y2="9"></line>
+                            </svg>
+                        </div>
+                        <div class="why-us__content">
+                            <h3 class="why-us__title">Selskapsform</h3>
+                            <p class="why-us__text">Aksjeselskap (AS)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta section">
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Klar til å komme i gang?</h2>
+                    <p class="cta__text">
+                        Ta kontakt for en uforpliktende prat. Vi hjelper deg gjerne med alt fra små reparasjoner til store prosjekter.
+                    </p>
+                    <div class="cta__actions">
+                        <a href="kontakt.html" class="btn btn--white btn--lg">Kontakt Oss</a>
+                        <a href="tjenester.html" class="btn btn--outline-white btn--lg">Se Tjenester</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <div class="footer__logo-icon">NR</div>
+                        <span class="footer__logo-text">Nova Rørservice</span>
+                    </div>
+                    <p class="footer__description">
+                        Din lokale rørlegger i Oslo Øst. Vi tilbyr profesjonell VVS-service med fokus på kvalitet og kundetilfredshet.
+                    </p>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Tjenester</h4>
+                    <ul class="footer__links">
+                        <li><a href="tjenester.html#rorleggerservice" class="footer__link">Rørleggerservice</a></li>
+                        <li><a href="tjenester.html#baderom" class="footer__link">Baderom</a></li>
+                        <li><a href="tjenester.html#kjokken" class="footer__link">Kjøkken</a></li>
+                        <li><a href="tjenester.html#rorleggervakt" class="footer__link">Rørleggervakt</a></li>
+                        <li><a href="tjenester.html#borettslag" class="footer__link">Borettslag</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Navigasjon</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html" class="footer__link">Hjem</a></li>
+                        <li><a href="tjenester.html" class="footer__link">Tjenester</a></li>
+                        <li><a href="om-oss.html" class="footer__link">Om Oss</a></li>
+                        <li><a href="priser.html" class="footer__link">Priser</a></li>
+                        <li><a href="kontakt.html" class="footer__link">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4 class="footer__title">Kontakt</h4>
+                    <div class="footer__contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <a href="tel:+4740012345" class="footer__contact-link">400 12 345</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <a href="mailto:kontakt@nova-rorservice.no" class="footer__contact-link">kontakt@nova-rorservice.no</a>
+                    </div>
+                    <div class="footer__contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Høybråtenveien 25B<br>1055 Oslo</span>
+                    </div>
+
+                    <div class="footer__hours">
+                        <div class="footer__hours-row">
+                            <span>Man - Fre:</span>
+                            <span>07:00 - 16:00</span>
+                        </div>
+                        <div class="footer__hours-row">
+                            <span>Lørdag:</span>
+                            <span>09:00 - 14:00</span>
+                        </div>
+                        <div class="footer__hours-row">
+                            <span>Søndag:</span>
+                            <span>Kun akutt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__bottom-inner">
+                    <p class="footer__copyright">&copy; 2025 Nova Rørservice AS. Alle rettigheter reservert.</p>
+                    <p class="footer__org">Org.nr: 936 922 988</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Tilbake til toppen">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
